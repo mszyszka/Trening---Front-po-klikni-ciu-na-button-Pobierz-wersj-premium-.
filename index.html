@@ -1,31 +1,40 @@
 <!DOCTYPE html>
+
 <head>
     <title>Training</title>
     <meta charset="utf-8" lang="PL">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=latin-ext" rel="stylesheet"> </head>
+
 <body>
     <header>
-        <logo>
-        </logo>
-        <div class="szara-linia"></div>   <!--Najlepiej jak to będzie border bottom dla headera-->
+        <div class="logo">
+            <a href="#" target="_blank"> <img src="img/logo-mobile.png" alt="Spotify logo" class="logo-img"> </a>
+        </div>
     </header>
-    <section class="zaloguj-z-facebookiem">
-        <button class="zaloguj-się-z-facebookiem">
-        </button>
-    </section>
-    <section class="logowanie-klasyczne">
-        <input type="button" class="zaloguj-z-facebookiem">
-        <input type="text" class="adres-email">
-        <input type="password" class="hasło">
-        <input type="checkbox" class="zapamiętaj-mnie">
-        <button class="zaloguj-się"></button>
-    </section>
-    <section class="akcja">
-        <p>Nie pamiętasz nazwy użytkownika lub hasła</p>
-        <p>Nie masz jeszcze konta</p>
-        <div class="szara-linia"></div>
-    </section>
+    <div class="container">
+        <section class="login-with-fb">
+            <button class="login-fb-btn">Log in with facebook</button>
+        </section>
+        <div class="divider"> <strong>or</strong> </div>
+        <section class="classic-login">
+            <form>
+                <input type="text" placeholder="Email address or username" class="email-input">
+                <input type="password" placeholder="Password" class="password-input">
+                <div class="checkbox-div">
+                    <input type="checkbox" class="remember-me-checkbox">
+                    <label class="remember-me-label">Remember me</label>
+                </div>
+                <button class="login-btn">Log in</button>
+            </form>
+        </section>
+        <section class="akcja">
+            <p>Nie pamiętasz nazwy użytkownika lub hasła</p>
+            <p>Nie masz jeszcze konta</p>
+            <div class="szara-linia"></div>
+        </section>
+    </div>
     <footer>
         <p></p>
     </footer>
