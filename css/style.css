@@ -40,6 +40,7 @@ header {
 .container {
     margin: auto;
     padding: 0 15px 0 15px;
+    max-width: 490px;
 }
 
 .divider {
@@ -86,7 +87,7 @@ header {
 /*///////////////////////classic-login/////////////////////////////*/
 
 .classic-login-section {
-    color: #919496;
+    color: #000000;
     margin-bottom: 30px;
 }
 
@@ -96,7 +97,6 @@ header {
     padding: 6px 12px;
     border: 1px solid #d9dadc;
     font-size: 16px;
-    color: #919496;
     outline: none;
     margin-bottom: 10px;
 }
@@ -117,7 +117,6 @@ header {
     padding: 6px 12px;
     border: 1px solid #d9dadc;
     font-size: 16px;
-    color: #919496;
     outline: none;
     margin-bottom: 30px;
 }
@@ -134,8 +133,14 @@ header {
 
 .checkbox-div {
     line-height: 1px;
-    margin-bottom: 30px;
+/*    margin-bottom: 30px;*/
     position: relative;
+    color: #919496;
+    font-size: 15px;
+    display: inline-block;
+    width: 150px;
+/*    margin-right: 145px;*/
+    margin: 0 145px 30px 0;
 }
 
 .remember-me-checkbox {
@@ -210,7 +215,22 @@ header {
     display: inline-block;
 }
 
+footer{
+    font-size: .7em;
+    padding: 20px 15px 0 15px;
+    color: #c1c3c6;
+}
 
+footer a{
+    color: #1db954;
+}
 
 
 /*/////////////////////////////////////////////////////////////////*/
+
+@media(min-width: 767px){
+    .login-btn{
+        width: auto;
+        display: inline;
+    }
+}
